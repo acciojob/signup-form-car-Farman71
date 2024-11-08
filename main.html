@@ -1,54 +1,48 @@
 <!DOCTYPE html>
-
 <html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+        <form method="post">
+		    <label for="name">Name</label>
+            <input type="text" required id="name" name="name" placeholder="Name">
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+            <label for="email">Email</label>
+            <input type="email" required id="email" name="email" placeholder="Email">
 
-<body>
-	<form method="post">
-		<div>
-			  <label for="name">Name*</label>
-		      <input type="text" id="name" required>
-		</div>
-        <div>
-			  <label for="email">Email*</label>
-		      <input type="email" id="email" required>
-		</div>
-		<div>
-			  <label>Gender*</label>
-			  <label for="male">Male</label>
-		      <input type="radio" id="male" name="gender" value="Male" required>
-			  <label for="female">Female</label>
-		      <input type="radio" id="female" name="gender" value="Female" required>
-		</div>
-		<div>
-			<label for="cars">Car Brands</label>
-			<select id="cars">
-				<option value="BMW">BMW</option>
-				<option value="Audi">Audi</option>
-				<option value="Mercedez">Mercedez</option>
-			</select>
-		</div>
-		<div>
-			  <label for="age">Age*</label>
-		      <input type="number" id="age" required>
-		</div>
-		<div>
-			  <label for="dob">DOB*</label>
-		      <input type="date" id="dob" required>
-		</div>
-		<div>
-			  <label for="password">Password*</label>
-		      <input type="password" id="password" required>
-		</div>
-		<button type="submit">submit button</button>
-	</form>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+			<label>Gender</label>
+            <label for="gender_m">
+			<input type="radio" required id="gender_m" name="gender">Male</label>
+            <label for="gender_f">
+			<input type="radio" required id="gender_f" name="gender">Female</label>
+        
+            <label for="select">Car Brands</label>
+            <select required id="cars" name="cars">
+                <option>--Please choose an option--</option>
+                <option>BMW</option>
+                <option>Audi</option>
+            </select>
 
-</body>
+            <label for="age">Age</label>
+            <input type="number" required id="age" name="age" placeholder="Age">
 
+            <label for="dob">DOB</label>
+            <input type="date" required id="dob" name="dob">
+
+            <label for="tel">Phone Number</label>
+            <input type="tel" id="tel" placeholder="xxx-xxx-xxxx" name="tel">
+
+            <label for="password">Password</label>
+            <input type="password" required id="password" name="password" placeholder="Password">
+
+            <input type="checkbox" required id="tos" name="tos">
+            <label for="name">I agree to the TOS</label>
+
+            <button type="submit" id="submit" value="Submit">Submit</button>
+        </form>
+        <!-- the entire body must be written by student -->
+    	<script type="text/javascript" src="./script.js">
+		</script>
+	</body>
 </html>
